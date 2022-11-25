@@ -1,0 +1,139 @@
+
+/* This is staff directory Section */
+
+.row {
+    margin: 8px -10px;
+    color: black;
+    font-size: 13px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    border-top: 2px solid #00B853;
+     border-bottom: 2px solid #00B853;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .column {
+        width: 50%;
+        max-height: 500.234px;
+        min-height: 500.234px;
+    }
+}
+ 
+@media screen and (min-width: 992px) {
+    .column {
+        width: 25%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px){
+    .column {
+        width: 100%;
+    }
+}
+
+/* This is where staff directory Section Ends */
+
+.h2title{
+  margin-top: 20px; 
+  background-color: #00B853; 
+  color: white; 
+  padding-left: 12px; 
+  margin-top: 0;
+  }
+
+  .h2title b {font-weight: bolder;}
+
+  #chainlink a{color: white;}     #chainlink a:hover{color: yellow;}
+
+#imgrespond{
+      margin-left: 150px;
+      width: 60%; 
+    }
+
+  @media only screen and (max-width: 600px){
+
+      #imgrespond{
+      margin-left: 50px;
+      width: 60%;}
+  } 
+
+  /* Let me start the css of the moble nav i want to create */
+  .div1{
+    background-color: transparent;
+    display: none;
+  }
+
+  .btnshift{
+    color: white;
+    background-color: black;
+    border: 2px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+.innerdiv{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.btnlink{
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btnclose{
+    color: white;
+    text-align: right;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+  
+  @media only screen and (max-width: 600px){
+    .div1{
+        background-color: transparent;
+        width: 200px;
+        display: block;
+        position: fixed;
+        top: 115px;
+      }
+
+      .innerdiv{
+        display: none;
+        flex-direction: column;
+        background-color: black;
+    }
+
+  }
+
+  /* Let me stop the css of the moble nav i want to create */
+  
